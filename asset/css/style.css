@@ -1,0 +1,269 @@
+@charset "utf-8";
+
+/* ================================================== */
+
+@font-face {
+  font-family: 'YuGothic';
+  src: url('../font/YuGothL.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'YuGothic';
+  src: url('../font/YuGothR.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'YuGothic';
+  src: url('../font/YuGothM.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'YuGothic';
+  src: url('../font/YuGothB.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* ================================================== */
+
+:root{
+  --background1: #ffffff;
+  --background2: #fcfcfc;
+  --background3: #f8f8f8;
+  --background4: #f4f4f4;
+  --background5: #f0f0f0;
+
+  --headerBackground: #f0f0f077;
+
+  --accent1: #f29f6b;
+
+  --text1: #222222;
+  --text2: #666666;
+
+  --shadow1: 0.5rem 0.5rem 2rem #e6e6e6, -0.5rem -0.5rem 2rem #ffffff;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 10px;
+  font-family: "YuGothic", sans-serif;
+
+  touch-action: manipulation;
+}
+
+body{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+/* body>div{
+  overflow-y: scroll;
+} */
+
+/* ================================================== */
+
+header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  display: block;
+  width: 100%;
+  height: 5rem;
+
+  background-color: var(--headerBackground);
+  backdrop-filter: blur(10px);
+
+  box-shadow: var(--shadow1);
+}
+
+header>a{
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  text-decoration: none;
+}
+
+header>a>p{
+  display: block;
+  width: 80%;
+  height: 100%;
+
+  margin: 0 auto;
+
+  color: var(--text2);
+  font-weight: 800;
+  font-size: 2rem;
+
+  text-align: justify;
+  line-height: 5rem;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+/* ================================================== */
+
+.articleContainer{
+  display: block;
+  width: calc(70% - 2*2rem);
+  height: auto;
+
+  margin: 2rem auto;
+  padding: 2rem;
+
+  background-color: var(--background2);
+  border: none;
+  border-radius: 2rem;
+
+  box-shadow: var(--shadow1);
+}
+
+#lead>.heading{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 3rem;
+
+  margin: 1rem 0;
+  padding: 0;
+}
+
+#lead>.heading>h1{
+  display: block;
+  width: 100%;
+  height: 2rem;
+  
+  margin: 0;
+  padding: 0;
+
+  color: var(--text1);
+  font-weight: 600;
+  font-size: 2rem;
+
+  text-align: justify;
+  line-height: 2rem;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+#lead>.heading>span{
+  display: block;
+  width: 100%;
+  height: 2rem;
+  
+  margin: 0;
+  padding: 0;
+
+  color: var(--text1);
+  font-weight: 500;
+  font-size: 0.75rem;
+
+  text-align: justify;
+  line-height: 1rem;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+#lead>quote{
+  display: block;
+  width: 100%;
+  
+  margin: 0;
+  padding: 0;
+
+  color: var(--text1);
+  font-weight: 400;
+  font-size: 1rem;
+
+  text-align: justify;
+  line-height: 1.2rem;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+/* ================================================== */
+
+#colourWindow{
+  position: fixed;
+  left: -10rem;
+  bottom: 8rem;
+
+  display: block;
+  width: 10rem;
+  height: 20rem;
+
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  border-radius: 0 1.5rem 1.5rem 0;
+  background-color: var(--background2);
+
+  transition: all .3s;
+
+  overflow: hidden;
+}
+#colourWindow.active{
+  left: 0;
+}
+
+#colourWindow>ul{
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+#colourWindow>ul>li{
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--background2);
+
+  color: var(--text1);
+  font-weight: 500;
+  font-size: 1.5rem;
+
+  text-align: center;
+  line-height: calc(20rem / 4);
+  letter-spacing: 0;
+  text-decoration: none;
+
+  transition: all .1s;
+}
+
+#colourWindow>ul>li.selected{
+  background-color: var(--background5);
+}
+
+#colourWindowToggle{
+  position: fixed;
+  left: 2rem;
+  bottom: 2rem;
+
+  display: block;
+  width: 4rem;
+  height: 4rem;
+
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+  background-color: var(--accent1);
+}
