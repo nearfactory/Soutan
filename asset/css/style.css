@@ -38,7 +38,7 @@
 
   --headerBackground: #f0f0f077;
 
-  --accent1: #f29f6b;
+  --accent1: #b5e9ff;
 
   --text1: #222222;
   --text2: #666666;
@@ -63,13 +63,21 @@ html{
 
 body{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 0.5px 1fr 0.5px 1fr 0.5px 1fr;
   gap: 0;
 }
 
-/* body>div{
-  overflow-y: scroll;
-} */
+body>div{
+  /* overflow-y: scroll; */
+}
+
+body>span.line{
+  display: block;
+  height: 100%;
+  width: 0.5px;
+
+  background-color: #666666;
+}
 
 /* ================================================== */
 
@@ -80,11 +88,15 @@ header{
   z-index: 100;
 
   display: block;
-  width: 100%;
+  width: calc(70% - 2*2rem);
   height: 5rem;
+
+  margin: 0 auto;
+  padding: 0 2rem;
 
   background-color: var(--headerBackground);
   backdrop-filter: blur(10px);
+  border-radius: 0 0 1.5rem 1.5rem;
 
   box-shadow: var(--shadow1);
 }
@@ -131,20 +143,20 @@ header>a>p{
   box-shadow: var(--shadow1);
 }
 
-#lead>.heading{
+.lead>.heading{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 3rem;
+  height: 3.5rem;
 
   margin: 1rem 0;
   padding: 0;
 }
 
-#lead>.heading>h1{
+.lead>.heading>h1{
   display: block;
   width: 100%;
-  height: 2rem;
+  height: 2.25rem;
   
   margin: 0;
   padding: 0;
@@ -154,15 +166,15 @@ header>a>p{
   font-size: 2rem;
 
   text-align: justify;
-  line-height: 2rem;
+  line-height: 2.25rem;
   letter-spacing: 0;
   text-decoration: none;
 }
 
-#lead>.heading>span{
+.lead>.heading>span{
   display: block;
   width: 100%;
-  height: 2rem;
+  height: 1.25rem;
   
   margin: 0;
   padding: 0;
@@ -172,12 +184,12 @@ header>a>p{
   font-size: 0.75rem;
 
   text-align: justify;
-  line-height: 1rem;
+  line-height: 1.25rem;
   letter-spacing: 0;
   text-decoration: none;
 }
 
-#lead>quote{
+.lead>quote{
   display: block;
   width: 100%;
   
@@ -192,6 +204,63 @@ header>a>p{
   line-height: 1.2rem;
   letter-spacing: 0;
   text-decoration: none;
+}
+
+.lead>quote>strong{
+  color: var(--text1);
+  font-weight: 600;
+  font-size: 1rem;
+
+  text-align: justify;
+  line-height: 1.2rem;
+  letter-spacing: 0;
+  text-decoration: underline;
+  text-decoration-color: var(--accent1);
+  text-decoration-thickness: 0.3rem;
+  text-underline-offset: -0.1rem;
+}
+
+.lead>p{
+  display: block;
+  width: 100%;
+  
+  margin: 0.5rem 0 0 0;
+  padding: 0;
+
+  color: var(--text1);
+  font-weight: 400;
+  font-size: 0.8rem;
+
+  text-align: right;
+  line-height: 1.2rem;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.lead>a.detail{
+  display: block;
+  width: 60%;
+  height: 1.5rem;
+
+  margin: 1rem auto 0 auto;
+  padding: 1rem;
+
+  background-color: var(--accent1);
+  border: none;
+  border-radius: 2rem;
+
+  color: var(--text1);
+  font-weight: 600;
+  font-size: 1.25rem;
+
+  text-align: center;
+  line-height: 1.5rem;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+.lead>a.detail>i{
+  font-size: 1rem;
 }
 
 /* ================================================== */
