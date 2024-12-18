@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+:root{
+  --background1: #ffffff;
+  --background2: #fcfcfc;
+  --background3: #f8f8f8;
+  --background4: #f4f4f4;
+  --background5: #f0f0f0;
+
+  --headerBackground: #f0f0f077;
+
+  --lineC: #999999;
+
+  --accent1: #107587;
+  --accent2: #1EB3CD;
+
+  --text1: #222222;
+  --text2: #666666;
+
+  --colorModelSeparate: #aaaaaa;
+  --colorModelCold: #0F53A0;
+  --colorModelWarm: #E78D1A;
+  --colorModel1: #862C74;
+  --colorModel2: #693D8C;
+  --colorModel3: #145098;
+  --colorModel4: #09628A;
+  --colorModel5: #027884;
+  --colorModel6: #13935A;
+  --colorModel7: #A3B21B;
+  --colorModel8: #E3AD15;
+  --colorModel9: #DA5826;
+  --colorModel10: #C23045;
+
+  --difficultyEx1B: #009539;
+  --difficultyEx1: #D40018;
+  --difficultyEx2B: #F9C0D3;
+  --difficultyEx2: #C8E7FB;
+  --difficultyEx3B: #027884;
+  --difficultyEx3: #862C74;
+  --difficultyEx4B: #7D378B;
+  --difficultyEx4: #0764AF;
+}
