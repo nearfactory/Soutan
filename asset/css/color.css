@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+
+
+/* 通常 */
+
 :root{
   --background1: #ffffff;
   --background2: #fcfcfc;
@@ -40,3 +44,146 @@
   --difficultyEx4B: #7D378B;
   --difficultyEx4: #0764AF;
 }
+
+
+
+
+
+/* 1型
+
+:root{
+  --background1: #ffffff;
+  --background2: #fcfcfc;
+  --background3: #f8f8f8;
+  --background4: #f4f4f4;
+  --background5: #f0f0f0;
+
+  --headerBackground: #f0f0f077;
+
+  --lineC: #999999;
+
+  --accent1: rgb(93, 101, 134);
+  --accent2: rgb(143, 155, 203);
+
+  --text1: #222222;
+  --text2: #666666;
+
+  --colorModelSeparate: #aaaaaa;
+  --colorModelCold: rgb(54, 75, 159);
+  --colorModelWarm: rgb(181, 150, 26);
+  --colorModel1: #303d75;
+  --colorModel2: #36478c;
+  --colorModel3: #354997;
+  --colorModel4: #485589;
+  --colorModel5: #5d6582;
+  --colorModel6: #847b58;
+  --colorModel7: #cca91a;
+  --colorModel8: #d5af14;
+  --colorModel9: #7b6b26;
+  --colorModel10: #494846;
+
+  --difficultyEx1B: rgb(136, 120, 55);
+  --difficultyEx1: rgb(38, 35, 26);
+  --difficultyEx2B: rgb(199, 202, 211);
+  --difficultyEx2: rgb(220, 227, 250);
+  --difficultyEx3B: rgb(93, 101, 130);
+  --difficultyEx3: rgb(48, 61, 117);
+  --difficultyEx4B: rgb(52, 70, 139);
+  --difficultyEx4: rgb(66, 88, 174);
+}
+  
+*/
+
+
+
+/* 2型
+
+:root{
+  --background1: #ffffff;
+  --background2: #fcfcfc;
+  --background3: #f8f8f8;
+  --background4: #f4f4f4;
+  --background5: #f0f0f0;
+
+  --headerBackground: #f0f0f077;
+
+  --lineC: #999999;
+
+  --accent1: rgb(70, 84, 137);
+  --accent2: rgb(110, 131, 208);
+
+  --text1: #222222;
+  --text2: #666666;
+
+  --colorModelSeparate: #aaaaaa;
+  --colorModelCold: rgb(42, 66, 161);
+  --colorModelWarm: rgb(196, 161, 24);
+  --colorModel1: rgb(72, 80, 113);
+  --colorModel2: rgb(68, 82, 138);
+  --colorModel3: rgb(43, 66, 153);
+  --colorModel4: rgb(53, 71, 139);
+  --colorModel5: rgb(67, 81, 134);
+  --colorModel6: rgb(100, 98, 93);
+  --colorModel7: rgb(193, 159, 27);
+  --colorModel8: rgb(218, 177, 20);
+  --colorModel9: rgb(151, 127, 35);
+  --colorModel10: rgb(107, 99, 65);
+
+  --difficultyEx1B: rgb(98, 90, 60);
+  --difficultyEx1: rgb(87, 73, 18);
+  --difficultyEx2B: rgb(213, 212, 209);
+  --difficultyEx2: rgb(214, 222, 251);
+  --difficultyEx3B: rgb(67, 81, 134);
+  --difficultyEx3: rgb(72, 80, 113);
+  --difficultyEx4B: rgb(72, 86, 136);
+  --difficultyEx4: rgb(48, 75, 176);
+}
+  
+*/
+
+
+
+/* 3型
+
+:root{
+  --background1: #ffffff;
+  --background2: #fcfcfc;
+  --background3: #f8f8f8;
+  --background4: #f4f4f4;
+  --background5: #f0f0f0;
+
+  --headerBackground: #f0f0f077;
+
+  --lineC: #999999;
+
+  --accent1: rgb(17, 117, 126);
+  --accent2: rgb(31, 179, 193);
+
+  --text1: #222222;
+  --text2: #666666;
+
+  --colorModelSeparate: #aaaaaa;
+  --colorModelCold: rgb(10, 93, 101);
+  --colorModelWarm: rgb(238, 124, 114);
+  --colorModel1: rgb(125, 57, 51);
+  --colorModel2: rgb(97, 74, 72);
+  --colorModel3: rgb(15, 90, 96);
+  --colorModel4: rgb(8, 102, 110);
+  --colorModel5: rgb(4, 119, 129);
+  --colorModel6: rgb(27, 135, 144);
+  --colorModel7: rgb(176, 153, 151);
+  --colorModel8: rgb(238, 149, 141);
+  --colorModel9: rgb(218, 82, 70);
+  --colorModel10: rgb(188, 54, 42);
+
+  --difficultyEx1B: rgb(11, 131, 141);
+  --difficultyEx1: rgb(204, 8, 0);
+  --difficultyEx2B: rgb(245, 196, 191);
+  --difficultyEx2: rgb(199, 233, 236);
+  --difficultyEx3B: rgb(4, 119, 129);
+  --difficultyEx3: rgb(125, 57, 51);
+  --difficultyEx4B: rgb(115, 69, 65);
+  --difficultyEx4: rgb(3, 109, 119);
+}
+  
+*/
